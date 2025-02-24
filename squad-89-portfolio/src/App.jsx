@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <h1>SQUAD 89</h1>
+    <h1>SQUAD 89 PORTFOLIO</h1>
     </>
   )
 }
