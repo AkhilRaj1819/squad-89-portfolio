@@ -1,0 +1,44 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: white;
+  }
+  
+  .mentors {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  
+  .mentor-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin: 10px 0;;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    color: #666;
+  }
