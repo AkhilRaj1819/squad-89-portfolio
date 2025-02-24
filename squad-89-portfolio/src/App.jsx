@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <header>
-      <h2 className='title'>SQUAD 89</h2>
+      <h2 className='title'>SQUAD89</h2>
       <div className='list-header'>
         <li className='lists'>
           <ul>Home</ul>

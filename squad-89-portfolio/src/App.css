@@ -1,9 +1,27 @@
 body {
-  background-image: url('https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
-  background-size: 110%;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://images.unsplash.com/photo-1518818419601-72c8673f5852?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   animation: zoom 10s infinite alternate;
   overflow: hidden;
+  font-family: 'BenguiatITCStd';
+  color: #FF0000; /* Text color */
+  text-shadow: 
+    0 0 10px #FF0000, 
+    0 0 20px #FF0000, 
+    0 0 30px #FF0000, 
+    0 0 40px #FF0000, 
+    0 0 50px #FF0000, 
+    0 0 60px #FF0000, 
+    0 0 70px #FF0000;
+}
+
+@font-face {
+  font-family: 'BenguiatITCStd';
+  src: url('https://db.onlinewebfonts.com/t/97c4b25dc74e0ab045154e75a8fdd69d.woff2') format('woff2');
 }
 
 @keyframes zoom {
@@ -33,7 +51,7 @@ header{
 }
 .lists {
   display: flex;
-  padding-left: 800px;
+  padding-left: 650px;
 }
 .main-title{
   display: flex;
@@ -53,6 +71,7 @@ header{
   justify-content: center;
   padding-top: 0px;
   color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .main-page-button-div{
   display: flex;
@@ -63,11 +82,18 @@ header{
 .main-page-button{
   height: 45px;
   width: 150px;
+  border-radius: 10px;
+  background-color: #FF0000;
+  border-color: #FF0000;
+  color: white;
 }
 .learn-more-button{
   height: 45px;
   width: 150px;
-
+  border-radius: 10px;
+  background-color: transparent;
+  border-color: #FF0000;
+  color: #FF0000;
 }
 .main-page-button-div button {
   margin-right: 20px;
