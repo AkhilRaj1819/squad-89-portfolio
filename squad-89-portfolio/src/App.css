@@ -54,6 +54,10 @@ header {
   display: flex;
   padding-left: 650px;
 }
+.lists ul a {
+  color: white;
+  text-decoration: none;
+}
 
 .main-page {
   font-family: 'BenguiatITCStd';
@@ -74,7 +78,17 @@ header {
   padding-top: 125px;
   font-size: 350%;
   color: white;
+  animation: flicker 4s linear infinite;
 }
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 1;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.33;
+  }
+}
+
 
 .sub-title {
   display: flex;

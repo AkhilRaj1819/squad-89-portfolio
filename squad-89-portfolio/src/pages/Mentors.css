@@ -1,44 +1,109 @@
 h1 {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    color: white;
-  }
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: white;
+}
+
+.mentors {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  overflow-y: auto;
+  height: calc(100vh - 50px); 
+}
+
+.mentor-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card {
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #FF0000;
+  border-color: #FF0000;
+  border-width: 2px;
+  border-style: solid;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  width: 250px;
+  height: 350px;
+  position: relative;
+  transition: transform 0.5s ease, box-shadow 0.3s ease, width 0.3s ease, height 0.3s ease; 
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #FF0000;
+  width: 250px; 
+  height: 350px; 
   
-  .mentors {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-  }
   
-  .mentor-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    width: 200px;
-  }
-  
-  .card-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .card-title {
-    font-size: 1.5em;
-    margin: 10px 0;;
-  }
-  
-  .card-description {
-    font-size: 1em;
-    color: #666;
-  }
+}
+.card:hover .card-image {
+  border-radius: 200px;
+  width: 50%;
+  height: auto;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: border-radius 0.5s;
+  transition: border-radius 0.5s ease, width 0.5s ease; 
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: white;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #666;
+}
+
+.hidden {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  text-align: center;
+  opacity: 0; 
+  transition: opacity 1s ease; 
+}
+
+.card:hover .hidden {
+  display: block;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0; 
+  transition: opacity 0.5s ease; 
+}
+
+.card:hover .linkedin-icon {
+  opacity: 1; 
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
